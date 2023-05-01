@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    a{
+      text-decoration: none;
+      color: red;
+    }
+  </style>
+  <title>sariq.dev</title>
+</head>
+<body>
+<header>
+  <a href="{% url 'home' %}">Bosh sahifa</a>
+  <a href="{% url 'about' %}">Saytimiz haqida</a>
+  <a href="{% url 'articles' %}">Articles</a>
+  <a href="{% url 'news' %}">Yangiliklar</a>
+
+  {% block content %}
+  {% endblock content %}
+</header>
+</body>
+</html>
